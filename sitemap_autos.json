@@ -1,0 +1,61 @@
+{
+  "startUrl": [
+    "https://www.kijiji.ca/b-cars-trucks/c174l0"
+  ],
+  "selectors": [
+    {
+      "id": "annonce_link",
+      "type": "Link",
+      "parentSelectors": [
+        "root"
+      ],
+      "selector": "a.title",
+      "multiple": true
+    },
+    {
+      "id": "titre",
+      "type": "Text",
+      "parentSelectors": [
+        "annonce_link"
+      ],
+      "selector": "h2.title, h3.title",
+      "multiple": false
+    },
+    {
+      "id": "prix",
+      "type": "Text",
+      "parentSelectors": [
+        "annonce_link"
+      ],
+      "selector": ".price, .item-price",
+      "multiple": false
+    },
+    {
+      "id": "ville",
+      "type": "Text",
+      "parentSelectors": [
+        "annonce_link"
+      ],
+      "selector": ".location, .location span",
+      "multiple": false
+    },
+    {
+      "id": "image_url",
+      "type": "Image",
+      "parentSelectors": [
+        "annonce_link"
+      ],
+      "selector": "img",
+      "multiple": false
+    },
+    {
+      "id": "pagination",
+      "type": "Link",
+      "parentSelectors": [
+        "root"
+      ],
+      "selector": "a[title='Next'], a[title='Suivant'], a.pagination__link",
+      "multiple": true
+    }
+  ]
+}

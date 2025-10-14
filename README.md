@@ -2,12 +2,14 @@
 
 Équipe : Louis G, Yvan, Alexy
 
-Site : https://www.kijiji.ca  
-Catégorie choisie : Autos - Voitures d'occasion (ex.)
+Site : https://www.kijiji.ca/b-cars-trucks/c174l0  
+Catégorie : Cars & Trucks (Autos / Camions)
 
 But : Collecter ~2500 annonces avec : titre, prix, ville, description, url, image.
 
-Instructions :
-- Louis G : configuration, sitemap de base, README + capture d'écran.
-- Yvan : ajout sélecteurs, pagination, scraping, export CSV.
-- Alexy : importer CSV dans MongoDB Atlas, requêtes, rapport PDF.
+Répartition :
+- Louis G : configuration GitHub, installation Web Scraper, création/import du sitemap, capture d'écran du sitemap.
+- Yvan : finalisation des sélecteurs, pagination, scraping et export CSV.
+- Alexy : import dans MongoDB Atlas, 3 requêtes, rédaction du rapport PDF.
+
+Accès enseignant : nicolas.payre@cegepsherbrooke.qc.ca

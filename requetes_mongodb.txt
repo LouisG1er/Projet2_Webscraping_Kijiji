@@ -1,0 +1,35 @@
+Projet 2 – Exploration de nouvelles technologies
+Fichier : requetes_mongodb.txt
+Équipe : Hisier Yvan, Kouassi Louis Gérard, Alexy Després
+Base de données : Projet2_Kijiji
+Collection : annonces
+
+----------------------------------------
+Requêtes MongoDB utilisées dans le projet
+----------------------------------------
+
+1 Trouver les véhicules à essence situés à Sherbrooke :
+---------------------------------------------------------
+{ "Carburant": /Essence/i, "Ville": /Sherbrooke/i }
+
+Affiche toutes les annonces où le carburant est "Essence" 
+et la ville contient "Sherbrooke".
+
+---------------------------------------------------------
+
+2 Trouver les véhicules avec un kilométrage inférieur à 100 000 km :
+---------------------------------------------------------------------
+{ "Kilométrage": { $regex: "^[0-9]{1,2}[0-9]{3,}" } }
+
+Sélectionne les voitures avec un faible kilométrage.
+L’expression régulière détecte les nombres inférieurs à 100 000 km.
+
+---------------------------------------------------------
+
+3 Trouver les annonces provenant de Longueuil :
+-------------------------------------------------
+{ "Ville": /Longueuil/i }
+
+Affiche toutes les voitures disponibles dans la région de Longueuil.
+
+---------------------------------------------------------
